@@ -1,0 +1,47 @@
+.gifsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    position: absolute;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.head button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.head h3{
+    width: 65%;
+}
+
+.searchBar {
+    display: flex;
+    background-color:  var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    align-items: center;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+
+.inputSearch {
+    background-color: transparent;
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+.gifs{
+    height: 40vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,51 @@
+.form {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    position: relative;
+}
+
+.inputBox {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.input {
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--color-dark);
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    resize: none;
+}
+
+.input:focus {
+    outline-color: var(--color-primary);
+    border: none;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gif{
+    width: 100%;
+    object-fit: cover;
+    margin: 0.5rem 0;
+}
+.comment{
+    width: 16rem;
+    background-color: var(--color-white);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: var(--card-border-radius);
+}

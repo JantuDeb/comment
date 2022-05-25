@@ -1,3 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+:root {
+  --color-dark: hsl(252, 30%, 17%);
+  --color-white: hsl(252, 30%, 100%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-primary: hsl(252, 75%, 60%);
+  --color-secondary: hsl(252, 100%, 90%);
+  --btn-padding: 0.4rem 1rem;
+  --card-border-radius: 1rem;
+  --card-padding: 1rem;
+  --border-radius: 2rem;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +29,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-light);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--btn-padding);
+  cursor: pointer;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: all 300ms ease;
+  font-size: 0.9rem;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
